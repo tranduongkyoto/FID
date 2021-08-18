@@ -1,7 +1,11 @@
+img {
+    max-width: 100%;
+}
+
 body {
-    position: relative;
+    /* position: relative;
     width: 1440px;
-    height: 5189px;
+    height: 5189px; */
     background: #FFFFFF;
 }
 
