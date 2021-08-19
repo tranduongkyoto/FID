@@ -207,13 +207,12 @@ li {
   margin-top: 40px;
 }
 .child3-des {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .child3-image {
-  padding-bottom: 100px;
 }
 .child3-content {
-  padding-top: 100px;
+  margin-top: 50px;
 }
 .child4-title {
   font-family: Open Sans;
@@ -233,7 +232,7 @@ li {
   line-height: 30px;
   text-align: center;
   color: #4f5665;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .child4-item {
   margin-top: 50px;
@@ -284,39 +283,33 @@ li {
 }
 .service-title {
   text-align: center;
+  margin-top: 50px;
 }
 .child5 {
   margin-top: 50px;
 }
 
 .vtv-logo {
-  margin-top: 60px;
 }
 .viettel-logo {
-  margin-top: 50px;
 }
 .mobifone-logo {
-  margin-top: 55px;
 }
 .vinaphone-logo {
-  margin-top: 60px;
 }
-
+.viresa-logo {
+  margin-top: -30px;
+}
 .review-border {
   background: #ffffff;
   border: 2px solid #0575e6;
   box-sizing: border-box;
   border-radius: 10px;
   margin-top: 50px;
-  height: 16rem;
+  height: 14rem;
 }
-.review-border-deactivate {
-  background: #ffffff;
+.deactivate {
   border: 2px solid #dddddd;
-  box-sizing: border-box;
-  border-radius: 10px;
-  margin-top: 50px;
-  height: 16rem;
 }
 .review-avatar {
   margin-top: 40px;
@@ -331,6 +324,7 @@ li {
   align-items: center;
   color: #0b132a;
   margin-left: 20px;
+  text-align: left;
 }
 .review-place {
   font-family: Rubik;
@@ -338,11 +332,12 @@ li {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
+  margin-top: -40px;
   /* or 214% */
 
   align-items: center;
   color: #4f5665;
-  margin-left: 100px;
+  margin-left: 110px;
 }
 .review-point {
   font-family: Rubik;
@@ -358,7 +353,7 @@ li {
   margin-left: 100px;
 }
 .review-star {
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 .review-content {
   font-family: Rubik;
@@ -371,37 +366,84 @@ li {
   color: #0b132a;
   padding: 10px;
   max-height: 100%;
+  /* margin-top: 40px; */
 }
 .child6 {
   margin-top: 50px;
   margin-bottom: 50px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .child6-union {
-  margin-left: 100px;
+  margin-left: 80px;
+  margin-top: 20px;
 }
 .child6-item {
   margin-left: 10px;
+  margin-top: 20px;
 }
 .arrow-border1 {
-  justify-content: center;
   border: 2px solid #0575e6;
   box-sizing: border-box;
   display: inline-block;
-  border-radius: 40px;
+  border-radius: 50%;
   padding: 10px 12px 10px 12px;
+  /* float: right; */
+  /* margin-left: 200px; */
+  /* margin-top: 20px; */
+  /* margin-left: 220px; */
 }
+
 .arrow-border2 {
-  justify-content: center;
   background: #0575e6;
   border: 2px solid #0575e6;
   box-sizing: border-box;
   box-shadow: 0px 14px 44px rgba(14, 20, 34, 0.08);
   display: inline-block;
-  border-radius: 40px;
+  border-radius: 50%;
   padding: 10px 12px 10px 12px;
   margin-left: 20px;
-  margin-right: 80px;
+  justify-content: end;
+  /* float: right; */
+  margin-right: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .review-border {
+    height: 16rem;
+  }
+  .review-point {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .arrow-border1 {
+    /* margin-left: 100px; */
+    /* margin-top: 20px; */
+  }
+  .review-border {
+    height: 14rem;
+  }
+  .item-divide1 {
+    display: none;
+  }
+  .item-divide2 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .review-border {
+    height: 13rem;
+  }
+  .arrow-border1 {
+    margin-top: 10px;
+    margin-left: 80px;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .arrow-border1 {
+    margin-left: 220px;
+  }
 }
 .child7 {
   padding: 40px 40px 20px 40px;
