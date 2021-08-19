@@ -9,7 +9,9 @@
     <!-- <link href='//fonts.googleapis.com/css?family=Rubik|Open Sans' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="styles.css">
     <link href="./assets/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -263,7 +265,7 @@
                     hồi tích cực từ khách hàng</div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="review-border">
+                <div class="review-border active">
                     <div>
                         <span>
                             <img class="review-avatar" src="public/Đăng ký/Ellipse 175.png" />
@@ -280,7 +282,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="review-border deactivate">
+                <div class="review-border">
                     <span>
                         <img class="review-avatar" src="public/Đăng ký/Ellipse 176.png" />
                     </span>
@@ -298,7 +300,7 @@
 
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="review-border deactivate">
+                <div class="review-border">
                     <span>
                         <img class="review-avatar" id="child7-item3-icon" src="public/Đăng ký/Ellipse 177.png" />
                     </span>
@@ -316,17 +318,17 @@
 
         <div class="row child6">
             <div class="col-6">
-                <img class="child6-union" src="./public/Union.png" />
-                <img class="child6-item" src="./public/Ellipse 172.png" />
-                <img class="child6-item" src="./public/Ellipse 172.png" />
-                <img class="child6-item" src="./public/Ellipse 172.png" />
+                <div class="feedback-pagi active"></div>
+                <div class="feedback-pagi"></div>
+                <div class="feedback-pagi"></div>
+                <!-- <img class="child6-item" src="./public/Ellipse 172.png" /> -->
             </div>
             <div class="col-6" style="display: flex; justify-content: flex-end;">
-                <div class="arrow-border1">
-                    <img class="arrow1" src="./public/Button/nonact/Vector-arrow-left.png" />
+                <div class="arrow-border1" onclick="onChange(false)">
+                    <i class="fas fa-arrow-left"></i>
                 </div>
-                <div class="arrow-border2">
-                    <img src="./public/Button/act/Vector-arrow-right.png" />
+                <div class="arrow-border1" style="margin-left: 1rem" onclick="onChange(true)">
+                    <i class="fas fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -404,6 +406,28 @@
     </div>
     <script src="./assets/js/layout.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script>
+        const feedback = [0, 1, 2];
+        let i = 0;
+        const onChange = (value) => {
+            if (value) 
+                i = i + 1;
+            else 
+                i = i - 1;
+            i = i % 3 < 0 ? 2 : (i % 3)
+            const rb = document.getElementsByClassName("review-border");
+            const fp = document.getElementsByClassName("feedback-pagi");
+            for (let y = 0; y < feedback.length; y++) {
+                rb[y].classList = "review-border";
+                fp[y].classList = "feedback-pagi";
+            }
+            rb[i].classList = "review-border active";
+            fp[i].classList = "feedback-pagi active";
+        }
+        setInterval(() => {
+            onChange(true)
+        }, 5000)
+    </script>
 </body>
 
 </html>

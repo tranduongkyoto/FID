@@ -8,6 +8,23 @@ img {
 .img-full {
     width: 100%;
 }
+
+.feedback-pagi {
+    cursor: pointer;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #DDE0E4;
+    margin: 0.3rem;
+}
+
+.feedback-pagi.active {
+    width: 45px;
+    background: #0575e6;
+}
+
+
 a,
 div,
 span {
@@ -305,12 +322,16 @@ li {
 }
 .review-border {
   background: #ffffff;
-  border: 2px solid #0575e6;
+  border: 2px solid #dddddd;
   box-sizing: border-box;
   border-radius: 10px;
   margin-top: 50px;
   height: 14rem;
 }
+.review-border.active {
+    border: 2px solid #0575e6;
+}
+
 .deactivate {
   border: 2px solid #dddddd;
 }
@@ -340,7 +361,7 @@ li {
 
   align-items: center;
   color: #4f5665;
-  margin-left: 110px;
+  margin-left: 106px;
 }
 .review-point {
   font-family: Rubik;
@@ -385,16 +406,32 @@ li {
   margin-top: 20px;
 }
 .arrow-border1 {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 2.5rem;
   border: 2px solid #0575e6;
   box-sizing: border-box;
   display: inline-block;
   border-radius: 50%;
-  padding: 10px 12px 10px 12px;
   /* float: right; */
   /* margin-left: 200px; */
   /* margin-top: 20px; */
   /* margin-left: 220px; */
 }
+
+.arrow-border1:hover {
+  background: #0575e6;
+}
+
+.arrow-border1 i {
+    font-size: 1.5rem;
+    color: #0575e6;
+}
+
+.arrow-border1:hover i {
+    color: white;
 
 .arrow-border2 {
   background: #0575e6;
