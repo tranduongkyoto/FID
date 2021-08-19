@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 img {
   max-width: 100%;
   max-height: 100%;
@@ -5,33 +8,20 @@ img {
 a,
 div,
 span {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
-
+ol,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .text-color {
   color: #0575e6;
 }
-.nav-menu {
-  display: block;
-}
 
-.navbar-toggle {
-  display: none;
-  padding: 4px 8px;
-  background-color: blue;
-}
-.navbar-toggle-icon {
-  background-image: url('./public/Đăng ký/mobile-icon-toggle.svg');
-  background-color: red;
-}
-@media only screen and (max-width: 1024px) {
-  .nav-menu {
-    display: none;
-  }
-  .navbar-toggle {
-    display: block;
-  }
-}
 .logo {
   margin-bottom: 50px;
 }
@@ -48,6 +38,7 @@ span {
 .header {
   justify-content: space-between;
   margin-top: 50px;
+  padding: 10px;
 }
 .header-menu {
   font-family: Rubik;
@@ -68,7 +59,8 @@ span {
   line-height: 19px;
   color: #0b132a;
 }
-.header-menu-signin {
+
+.header-signin-content {
   font-family: Rubik;
   font-style: normal;
   font-weight: bold;
@@ -76,7 +68,7 @@ span {
   line-height: 19px;
   color: #0575e6;
 }
-.header-menu-border {
+.header-signin-border {
   border: 1px solid #0575e6;
   box-sizing: border-box;
   border-radius: 50px;
@@ -84,8 +76,67 @@ span {
   padding: 5px 25px 5px 25px;
   margin-left: 20px;
 }
+
+.navbar-toggler {
+  padding: 4px 8px;
+  display: none;
+}
+
+.bg-blue {
+  background: #0575e6 !important;
+}
+@media only screen and (max-width: 1024px) {
+  .nav-menu {
+    display: none;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+.mobile-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: '';
+  background-size: 100% 100%;
+  background-image: url('./public/Đăng ký/mobile-icon-toggle.svg');
+  display: inline-block;
+}
+.board-menu-mobile {
+  top: 80%;
+  left: 0;
+  position: absolute;
+  padding-left: 15px;
+  transition: all 0.5s;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: top center;
+  background-color: white;
+  width: 100%;
+  border-bottom: 1px solid rgba(125, 74, 199, 1);
+}
+.board-menu-mobile.clicked {
+  z-index: 5;
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+  position: relative;
+}
+.board-menu-mobile ul li a {
+  line-height: normal;
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  padding: 15px;
+  transition: all 0.3s ease-out 0s;
+}
+
 .child1 {
-  margin-top: 50px;
   text-align: left;
 }
 .child1-button {
