@@ -1,6 +1,41 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+a,
+div,
+span {
+  text-decoration: none;
+}
+
+.text-color {
+  color: #0575e6;
+}
+.nav-menu {
+  display: block;
+}
+
+.navbar-toggle {
+  display: none;
+  padding: 4px 8px;
+  background-color: blue;
+}
+.navbar-toggle-icon {
+  background-image: url('./public/Đăng ký/mobile-icon-toggle.svg');
+  background-color: red;
+}
+@media only screen and (max-width: 1024px) {
+  .nav-menu {
+    display: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+}
 .logo {
   margin-bottom: 50px;
 }
+
 .logo-mini {
   font-family: Rubik;
   font-style: normal;
@@ -8,6 +43,7 @@
   font-size: 24px;
   line-height: 28px;
   color: #43a5ff;
+  margin-top: 100px;
 }
 .header {
   justify-content: space-between;
@@ -23,6 +59,7 @@
   text-align: center;
   margin-right: 50px;
 }
+
 .header-menu-register {
   font-family: Rubik;
   font-style: normal;
@@ -64,6 +101,7 @@
 }
 .child2 {
   margin-top: 50px;
+  /* box-shadow: 20px 20px 5px 5px #f8f8f8; */
 }
 .child2-icon-border {
   background: #d0e6fd;
@@ -95,6 +133,20 @@
   line-height: 30px;
   color: #4f5665;
   margin-left: 100px;
+}
+.item-divide1 {
+  margin-left: 100px;
+  border: 2px solid #eeeff2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* transform: rotate(90deg); */
+}
+.item-divide2 {
+  margin-left: 150px;
+  border: 2px solid #eeeff2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* transform: rotate(90deg); */
 }
 .child3 {
   margin-top: 50px;
@@ -179,15 +231,41 @@
 
   color: #0575e6;
 }
+.service-title {
+  text-align: center;
+}
 .child5 {
   margin-top: 50px;
 }
+
+.vtv-logo {
+  margin-top: 60px;
+}
+.viettel-logo {
+  margin-top: 50px;
+}
+.mobifone-logo {
+  margin-top: 55px;
+}
+.vinaphone-logo {
+  margin-top: 60px;
+}
+
 .review-border {
   background: #ffffff;
   border: 2px solid #0575e6;
   box-sizing: border-box;
   border-radius: 10px;
   margin-top: 50px;
+  height: 16rem;
+}
+.review-border-deactivate {
+  background: #ffffff;
+  border: 2px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 50px;
+  height: 16rem;
 }
 .review-avatar {
   margin-top: 40px;
@@ -238,10 +316,10 @@
   font-size: 16px;
   line-height: 30px;
   /* or 187% */
-
   align-items: center;
-
   color: #0b132a;
+  padding: 10px;
+  max-height: 100%;
 }
 .child6 {
   margin-top: 50px;
@@ -255,6 +333,7 @@
   margin-left: 10px;
 }
 .arrow-border1 {
+  justify-content: center;
   border: 2px solid #0575e6;
   box-sizing: border-box;
   display: inline-block;
@@ -262,6 +341,7 @@
   padding: 10px 12px 10px 12px;
 }
 .arrow-border2 {
+  justify-content: center;
   background: #0575e6;
   border: 2px solid #0575e6;
   box-sizing: border-box;
@@ -269,6 +349,7 @@
   display: inline-block;
   border-radius: 40px;
   padding: 10px 12px 10px 12px;
+  margin-left: 20px;
   margin-right: 80px;
 }
 .child7 {
@@ -280,7 +361,7 @@
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  z-index: 1;
 }
 .child7-button {
   background: #0575e6;
@@ -299,6 +380,13 @@
 .mini-logo {
   margin-top: 100px;
 }
+.footer {
+  background: #f8f8f8;
+}
+.footer-logo-border {
+  margin-top: 50px;
+}
+
 .footer-des {
   text-align: left;
   margin-top: 20px;
