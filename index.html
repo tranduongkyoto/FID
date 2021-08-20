@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href='//fonts.googleapis.com/css?family=Rubik|Open Sans' rel='stylesheet' type='text/css'> -->
+    <link href='//fonts.googleapis.com/css?family=Rubik|Open Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css">
     <link href="./assets/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -16,7 +16,7 @@
 
 <body>
     <div class="container">
-        <div class="row header">
+        <div class="row header" id="header">
             <div>
                 <span class="logo-border">
                     <img class="logo" src="public/Đăng ký/logo_Ftech (1) 1.png" />
@@ -26,12 +26,12 @@
             </div>
             <div>
                 <span class="nav-menu">
-                    <span class="header-menu">Giới thiệu</span>
-                    <span class="header-menu"> Sản phẩm</span>
-                    <span class="header-menu">Trợ giúp</span>
-                    <a href="https://id-internal-dev.ftech.ai/Account/Login" class="header-menu-register">Đăng kí</a>
+                    <a href="#intro" class="header-menu" >Giới thiệu</a>
+                    <a href="#service" class="header-menu"> Sản phẩm</a>
+                    <a href="#help"  class="header-menu">Trợ giúp</a>
+                    <a href="https://id-internal-dev.ftech.ai/Account/Login" class="header-menu-register" target="_blank">Đăng kí</a>
                     <span class="header-signin-border">
-                        <a href="https://id-internal-dev.ftech.ai/Account/Login" class="header-signin-content">
+                        <a href="https://id-internal-dev.ftech.ai/Account/Login" class="header-signin-content" target="_blank">
                             Đăng nhập
                         </a>
                     </span>
@@ -44,19 +44,19 @@
                 <div class="list-board-menu-mobile">
                     <ul class="">
                         <li>
-                            <a>Trang chủ</a>
+                            <a href="#intro">Giới thiệu</a>
                         </li>
                         <li>
-                            <a>Giới thiệu</a>
+                            <a href="#service">Sản phẩm</a>
                         </li>
                         <li>
-                            <a>Sản phẩm</a>
+                            <a href="#help">Trợ giúp</a>
                         </li>
                         <li>
-                            <a>Đăng kí</a>
+                            <a href="https://id-internal-dev.ftech.ai/Account/Login" target="_blank">Đăng kí</a>
                         </li>
                         <li>
-                            <a>Đăng nhập</a>
+                            <a href="https://id-internal-dev.ftech.ai/Account/Login" target="_blank">Đăng nhập</a>
                         </li>
                     </ul>
                 </div>
@@ -73,7 +73,7 @@
                     thông tin quan trọng
                     nhất của mình ở bất kỳ nơi nào, và rất nhiều lợi ích khác.</div>
                 <div class="child1-button ">
-                    <a href="https://id-internal-dev.ftech.ai/Account/Login" class="child1-button-content">ĐĂNG KÝ</a>
+                    <a href="https://id-internal-dev.ftech.ai/Account/Login" class="child1-button-content" target="_blank">ĐĂNG KÝ</a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -114,7 +114,7 @@
                 <img class="child3-image img-full" src="public/Đăng ký/Illustration 2.png" />
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 child3-content">
-                <h1>Các lợi ích khi sử dụng FID</h1>
+                <h1 id="intro">Các lợi ích khi sử dụng FID</h1>
                 <div class="child3-des1">Chỉ cần 1 tài khoản duy nhất trên FID sẽ giúp bạn tối đa hóa trải nghiệm và
                     quản lý
                     tài
@@ -141,7 +141,7 @@
 
         <div class="row">
             <div class="col-12">
-                <h1 class="service-title">Các dịch vụ liên kết</h1>
+                <h1 class="service-title" id="service">Các dịch vụ liên kết</h1>
                 <div class="child4-des">Hơn 30+ dịch vụ được liên kết với FID và dễ dàng sử dụng</div>
             </div>
             <div class="col-lg-3 col-sm-6 child4-item">
@@ -258,7 +258,7 @@
 
         <div class="row">
             <div class="col-12">
-                <div class="child4-title">Ý kiến phản hồi từ các chuyên gia</div>
+                <div class="child4-title" id="help">Ý kiến phản hồi từ các chuyên gia</div>
                 <div class="child4-des">FID đem lại trải nghiệm tuyệt vời cho hơn 100.000 khách hàng và dưới đây là một
                     vài
                     phản
@@ -321,7 +321,6 @@
                 <div class="feedback-pagi active"></div>
                 <div class="feedback-pagi"></div>
                 <div class="feedback-pagi"></div>
-                <!-- <img class="child6-item" src="./public/Ellipse 172.png" /> -->
             </div>
             <div class="col-6" style="display: flex; justify-content: flex-end;">
                 <div class="arrow-border1" onclick="onChange(false)">
@@ -332,6 +331,8 @@
                 </div>
             </div>
         </div>
+
+        
     </div>
     <div class="footer">
         <div class="container">
@@ -339,19 +340,18 @@
                 <div class="col-lg-8 sol-sm-12">
                     <h1>BẮT ĐẦU TRẢI NGHIỆM <span class="text-color"> FID</span></h1>
                     <div>
-                        Nếu bạn đã có tài khoản FID ?<a href="https://id-internal-dev.ftech.ai/Account/Login"
-                            class="text-color"> Đăng nhập</a>
+                        Nếu bạn đã có tài khoản FID ?<a href="https://id-internal-dev.ftech.ai/Account/Login" class="text-color" target="_blank">
+                            Đăng nhập</a>
                     </div>
-
                 </div>
                 <div class="col-lg-4 col-sm-12">
                     <div class="child7-button">
-                        <a href="https://id-internal-dev.ftech.ai/Account/Login" class="child1-button-content">ĐĂNG KÝ
+                        <a href="https://id-internal-dev.ftech.ai/Account/Login" class="child1-button-content" target="_blank">ĐĂNG KÝ
                             NGAY</a>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row footer">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="footer-logo-border">
                         <img class="logo" src="public/Đăng ký/logo_Ftech (1) 2.png" />
@@ -360,8 +360,15 @@
                     <div class="footer-des">FID là kênh quản lý tài khoản trên đa dịch vụ <br /> được cung cấp bởi
                         Ftech.ai
                     </div>
-                    <img src="./public/Socmed/Facebook.png" />
-                    <img src="./public/Socmed/Instagram.png" />
+                    <div class="footer-icon-border">
+                        <a href="https://www.facebook.com/FTECHAI" target="_blank" class="facebook-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.facebook.com/FTECHAI" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-12">
                     <div class="footer-menu">Sản phẩm</div>
@@ -383,7 +390,7 @@
                         <div class="footer-menu-content">Spago</div>
                     </a>
                     <a href="http://ftech.ai/" target="_blank">
-                        <div class="footer-menu-content">Xem thêm >></div>
+                        <div class="footer-menu-content footer-more">Xem thêm >></div>
                     </a>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-12">
@@ -399,35 +406,14 @@
                     <div class="footer-menu-content">Become Partner</div>
                 </div>
 
-                <div class="col-12">Copyright © 2021 Family Technology Company Limited - All rights reserved.
+                <div class="col-12 copyright">Copyright © 2021 Family Technology Company Limited - All rights reserved.
                 </div>
             </div>
         </div>
     </div>
     <script src="./assets/js/layout.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
-    <script>
-        const feedback = [0, 1, 2];
-        let i = 0;
-        const onChange = (value) => {
-            if (value) 
-                i = i + 1;
-            else 
-                i = i - 1;
-            i = i % 3 < 0 ? 2 : (i % 3)
-            const rb = document.getElementsByClassName("review-border");
-            const fp = document.getElementsByClassName("feedback-pagi");
-            for (let y = 0; y < feedback.length; y++) {
-                rb[y].classList = "review-border";
-                fp[y].classList = "feedback-pagi";
-            }
-            rb[i].classList = "review-border active";
-            fp[i].classList = "feedback-pagi active";
-        }
-        setInterval(() => {
-            onChange(true)
-        }, 5000)
-    </script>
+    
 </body>
 
 </html>

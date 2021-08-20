@@ -6,28 +6,25 @@ img {
   max-height: 100%;
 }
 .img-full {
-    width: 100%;
+  width: 100%;
 }
 
 .feedback-pagi {
-    cursor: pointer;
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    background: #DDE0E4;
-    margin: 0.3rem;
+  cursor: pointer;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: #dde0e4;
+  margin: 0.3rem;
 }
 
 .feedback-pagi.active {
-    width: 45px;
-    background: #0575e6;
+  width: 45px;
+  background: #0575e6;
 }
 
-
-a,
-div,
-span {
+a {
   /* text-decoration: none; */
 }
 ol,
@@ -309,14 +306,6 @@ li {
   margin-top: 50px;
 }
 
-.vtv-logo {
-}
-.viettel-logo {
-}
-.mobifone-logo {
-}
-.vinaphone-logo {
-}
 .viresa-logo {
   margin-top: -30px;
 }
@@ -329,7 +318,7 @@ li {
   height: 14rem;
 }
 .review-border.active {
-    border: 2px solid #0575e6;
+  border: 2px solid #0575e6;
 }
 
 .deactivate {
@@ -376,9 +365,7 @@ li {
   color: #0b132a;
   margin-left: 100px;
 }
-.review-star {
-  /* margin-left: 10px; */
-}
+
 .review-content {
   font-family: Rubik;
   font-style: normal;
@@ -406,11 +393,11 @@ li {
   margin-top: 20px;
 }
 .arrow-border1 {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 2.5rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 2.5rem;
   border: 2px solid #0575e6;
   box-sizing: border-box;
   display: inline-block;
@@ -426,13 +413,13 @@ li {
 }
 
 .arrow-border1 i {
-    font-size: 1.5rem;
-    color: #0575e6;
+  font-size: 1.5rem;
+  color: #0575e6;
 }
 
 .arrow-border1:hover i {
-    color: white;
-
+  color: white;
+}
 .arrow-border2 {
   background: #0575e6;
   border: 2px solid #0575e6;
@@ -475,9 +462,11 @@ li {
   .review-border {
     height: 13rem;
   }
-  .arrow-border1 {
-    /* margin-top: 10px; */
-    /* margin-left: 80px; */
+  .logo {
+    max-width: 50%;
+  }
+  .header {
+    margin-top: 0px;
   }
 }
 @media only screen and (min-width: 990px) {
@@ -487,6 +476,7 @@ li {
 }
 .child7 {
   padding: 40px 40px 20px 40px;
+  background-color: red;
 }
 .child7-border {
   background: #ffffff;
@@ -522,7 +512,7 @@ li {
 
 .footer-des {
   text-align: left;
-  margin-top: 20px;
+  margin-top: -40px;
   margin-bottom: 20px;
 }
 .footer-menu {
@@ -545,4 +535,25 @@ li {
 }
 .footer-more {
   color: #0575e6;
+}
+.copyright {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  color: #afb5c0;
+  margin-top: 50px;
+}
+.footer-icon-border {
+  margin-top: 40px;
+}
+.facebook-icon {
+  margin-left: 50px;
+  margin-right: 10px;
+}
+.fa-facebook,
+.fa-instagram {
+  font-size: 30px;
 }
